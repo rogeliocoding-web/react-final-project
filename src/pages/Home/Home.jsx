@@ -56,7 +56,7 @@ useEffect(() => {
 
       <div className="hero-wrapper">
 
-        {/* Banner + search only — no caption inside here */}
+       
         <div className="hero">
           <img src={hero_banner} alt="" className="banner-img" />
 
@@ -104,7 +104,7 @@ useEffect(() => {
           </div>
         </div>
 
-        {/* Caption is OUTSIDE .hero so overflow:hidden never clips it */}
+        
         <div className="hero-caption">
           <img src={hero_title} alt="" className="caption-img" />
           <p>
