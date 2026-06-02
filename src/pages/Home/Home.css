@@ -1,0 +1,339 @@
+.home {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.hero {
+    position: relative;
+    background: #000;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.banner-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    mask-image: linear-gradient(to right, transparent 30%, black 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 30%, black 100%);
+}
+
+.hero-caption {
+    position: absolute;
+    width: 100%;
+    padding-left: 6%;
+    bottom: 0;
+}
+
+.caption-img {
+    width: 90%;
+    max-width: 420px;
+    margin-bottom: 30px;
+}
+
+.hero-caption p {
+    max-width: 700px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.hero-btns .btn img {
+    width: 25px;
+}
+
+.hero-btns .btn {
+    border: 0;
+    outline: 0;
+    padding: 8px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero-btns .btn.dark-btn {
+    color: #fff;
+    background: #6d6d6eb3;
+}
+
+.hero-btns .btn:hover {
+    background: #ffffffbf;
+}
+
+.hero-btns .btn.dark-btn:hover {
+    background: #6d6d6e66;
+}
+
+.search-container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 25px;
+    padding: 10px 20px;
+    width: 50%;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+}
+
+.search-bar input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.search-icon {
+    width: 18px;
+    margin-right: 10px;
+    filter: invert(1);
+}
+
+.search-result-item img {
+    width: 40px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.search-results {
+    width: 50%;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+    margin-top: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.search-result-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.search-result-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.search-result-item span {
+    color: #fff;
+    font-size: 14px;
+}
+
+.search-result-item p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    margin-top: 3px;
+    text-transform: capitalize;
+}
+
+.no-img {
+    width: 40px;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #fff;
+}
+
+.no-results {
+    color: rgba(255, 255, 255, 0.6);
+    padding: 15px 20px;
+    font-size: 14px;
+}
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+    .banner-img {
+        mask-image: linear-gradient(to right, transparent 20%, black 90%);
+        -webkit-mask-image: linear-gradient(to right, transparent 20%, black 90%);
+    }
+
+    .hero-caption p {
+        font-size: 14px;
+        max-width: 400px;
+    }
+
+    .caption-img {
+        max-width: 300px;
+    }
+
+    .search-container {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0;
+        background: none;
+    }
+
+    .search-bar {
+        width: 65%;
+        padding: 9px 15px;
+    }
+
+    .search-results {
+        width: 65%;
+    }
+}
+
+/* Phone (max 768px) */
+@media (max-width: 768px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-img {
+        order: 1;
+        mask-image: linear-gradient(to right, transparent 10%, black 80%);
+        -webkit-mask-image: linear-gradient(to right, transparent 10%, black 80%);
+    }
+
+    .search-container {
+        order: 2;
+        position: absolute;
+        top: 45%;
+        transform: translateY(-50%);
+        padding: 0;
+        background: none;
+        width: 100%;
+    }
+
+    .search-bar {
+        width: 70%;
+        padding: 7px 12px;
+    }
+
+    .search-results {
+        width: 70%;
+    }
+
+    .search-bar input {
+        font-size: 13px;
+    }
+
+    .search-icon {
+        width: 14px;
+    }
+
+    .hero-caption {
+        order: 3;
+        position: relative;
+        bottom: unset;
+        padding: 20px 4% 30px 4%;
+        background: #000;
+        margin-top: 30px;
+    }
+
+    .caption-img {
+        max-width: 180px;
+        margin-bottom: 15px;
+    }
+
+    .hero-caption p {
+        font-size: 13px;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+
+    .hero-btns .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 10px;
+        font-size: 13px;
+    }
+}
+
+/* Small phones (max 480px) */
+@media (max-width: 480px) {
+    .banner-img {
+        mask-image: linear-gradient(to right, transparent 5%, black 70%);
+        -webkit-mask-image: linear-gradient(to right, transparent 5%, black 70%);
+    }
+
+    .search-container {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        padding: 0;
+        background: none;
+    }
+
+    .search-bar {
+        width: 80%;
+        padding: 6px 10px;
+    }
+
+    .search-results {
+        width: 80%;
+    }
+
+    .search-bar input {
+        font-size: 12px;
+    }
+
+    .search-icon {
+        width: 12px;
+    }
+
+    .hero-caption {
+        margin-top: 20px;
+        padding: 15px 4% 25px 4%;
+    }
+
+    .caption-img {
+        max-width: 140px;
+    }
+
+    .hero-caption p {
+        font-size: 12px;
+    }
+}
+.home {
+    min-height: 100vh;
+    background: #000;
+}

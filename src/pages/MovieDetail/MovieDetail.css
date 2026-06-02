@@ -1,0 +1,87 @@
+.movie-detail {
+    min-height: 100vh;
+    background: #000;
+    color: #fff;
+    padding: 40px 6%;
+}
+
+.back-btn {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 40px;
+    transition: 0.2s ease;
+}
+
+.back-btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+.movie-content {
+    display: flex;
+    gap: 50px;
+}
+
+.movie-poster {
+    width: 300px;
+    border-radius: 8px;
+}
+
+.movie-info {
+    flex: 1;
+}
+
+.movie-info h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.movie-meta {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.movie-genre {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.movie-plot {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+.movie-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.movie-details p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.movie-details span {
+    color: #fff;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.loading {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 24px;
+}

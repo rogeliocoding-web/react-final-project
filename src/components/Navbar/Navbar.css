@@ -1,0 +1,126 @@
+.navbar {
+    width: 100%;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    font-size: 14px;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.7) 10%, transparent);
+    z-index: 1;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.navbar-left img {
+    width: 200px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.navbar ul li:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-right .icons {
+    width: 20px;
+    cursor: pointer;
+}
+
+.navbar-right p {
+    color: #fff;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .navbar-left {
+        gap: 20px;
+    }
+
+    .navbar ul {
+        gap: 10px;
+        font-size: 12px;
+        flex-wrap: wrap;
+    }
+
+    .navbar-left img {
+        width: 150px;
+    }
+}
+
+/* Phone */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 4%;
+        gap: 10px;
+        background-image: linear-gradient(180deg, rgba(0,0,0,0.9) 80%, transparent);
+    }
+
+    .navbar-left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navbar-left img {
+        width: 120px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        gap: 6px 12px;
+        font-size: 11px;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        font-size: clamp(9px, 1.8vw, 12px);
+        flex: 0 0 auto;
+    }
+
+    .navbar-right {
+        position: absolute;
+        top: 15px;
+        right: 4%;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    .navbar-left img {
+        width: 100px;
+    }
+
+    .navbar ul {
+        gap: 5px 10px;
+    }
+
+    .navbar ul li {
+        font-size: clamp(8px, 2vw, 11px);
+    }
+}
