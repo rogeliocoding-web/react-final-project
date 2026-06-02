@@ -6,7 +6,7 @@ import hero_title from "../../assets/hero_title.png";
 import info_icon from "../../assets/info_icon.png";
 import search_icon from "../../assets/search_icon.svg";
 import { useNavigate } from 'react-router-dom';
-import loading_spinner from "../../assets/loading_spinner.gif";
+import loading_spinner from "../../assets/purple_loading_spinner.gif";
 
 const Home = () => {
   const navigate = useNavigate();
